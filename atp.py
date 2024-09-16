@@ -44,4 +44,4 @@ while True:
         if proxima.lower() == 'n':
             break
     else:
-        print("Opção inválida, tente novamente.")
+        print("Opção inválida, escolha 1 número de 1 a 4.")
