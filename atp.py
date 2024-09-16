@@ -41,7 +41,7 @@ while True:
 
         # Pergunta ao usuário se deseja continuar ou sair
         proxima = input("Deseja fazer outra operação? (s/n): ")
-        if proxima.lower() == 'n':
+        if proxima.lower() != 's':
             break
     else:
         print("Opção inválida, escolha 1 número de 1 a 4.")
