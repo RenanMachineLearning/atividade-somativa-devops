@@ -16,7 +16,7 @@ def dividir(x, y):
 
 
 # opções de inputs
-print("Selecione a operação:")
+print("Qual operação deseja realizar?")
 print("1. Adição")
 print("2. Subtração")
 print("3. Multiplicação")
