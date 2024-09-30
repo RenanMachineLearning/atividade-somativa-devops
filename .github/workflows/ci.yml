@@ -1,9 +1,10 @@
 name: Continuous Integration Workflow
 # run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
-  pull_request:
-    branches:
-      - my-branch
+  - push
+  #pull_request:
+   # branches:
+    #  - my-branch
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,4 +17,14 @@ jobs:
         with:
           linter: pylint
 
-
+jobs:
+ discord:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run Discord Webhook
+      uses: Sniddl/discord-commits@v1.6
+      with:
+        webhook: ${{ secrets.DISCORD_TENTATIVA_2 }}
+        template: "avatar-with-link"
+        include-extras: true
