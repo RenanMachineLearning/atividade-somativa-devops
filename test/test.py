@@ -1,5 +1,5 @@
 # importando funções da pasta principal
-from src.atp import *
+from src.atp import adicionar, subtrair, multiplicar, dividir
 
 # funções com operações
 
